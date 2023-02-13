@@ -4,7 +4,7 @@ weight = input("enter your weight in kg: ")
 
 BMI = float(weight) / float(height) ** 2
 
-print(int(BMI))
+print(round(BMI, 2))
 
 #bmi calculator, taking str input and changing to float to then calculate bmi in kg. 
-#In next version will make it so the calculation rounds the number off rather than just changing to a int
+#this version rounds the number to 2 decimals. 
