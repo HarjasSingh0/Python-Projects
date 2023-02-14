@@ -1,0 +1,18 @@
+#Getting total bill 
+Total_bill = input("Welcome to the tip calculator\nWhat was the total bill? $ ")
+#Getting tip percentage
+tip_percent = input("What percentage tip would you like to give? 10, 12, or 15? ")
+#getting number of people
+people = input("How many people to split the bill? ")
+#Starting calculating tip by * the tip selected by 100
+Calculating_Tip1 = int(tip_percent) / 100
+#taking the top calculation and multiplying it by total bill to get the tip number
+Total_tip_amount = float(Total_bill) * float(Calculating_Tip1)
+#Adding the tip amount to the total bill then dividing
+Final_payment = (float(Total_bill) + float(Total_tip_amount)) / int(people)
+#Making the number round 2 decimals
+Last_Amount = round(Final_payment, 2)
+#using format to get the 0 in the second decimal since it does not show, 
+Last_Amount = "{:.2f}".format(Final_payment)
+
+print(f"Each person should pay: {Last_Amount}")
